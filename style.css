@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.containerproje{
+    position: relative;
+}
+
+.containerproje .slide-container .slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+}
+
+.containerproje .slide-container .slide .contentproje{
+    flex: 1 1 350px;
+    animation: slideContent .4s linear .4s backwards;
+}
+
+@keyframes slideContent{0%
+{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+}
+
+
+.containerproje .slide-container .slide .contentproje h3{
+    font-size: 35px;
+    color: #f4a6fe;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.containerproje .slide-container .slide .contentproje p{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    width: 40%;
+    height: 10%;
+
+}
+
+.containerproje .slide-container .slide .contentproje .bntproj{
+    margin-top: 10px;
+    display: inline-block;
+    background: #8932c3;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 9px 40px;
+    border-radius: 5px;
+    border: 2px solid #8932c3;
+    font-family: 'Noto Sans', sans-serif;
+    text-decoration: none;
+}
+
+.containerproje .slide-container .slide .contentproje .bntproj:hover{
+    background: #a355d7;
+    border: 2px solid #a355d7;
+    color: #ffffff;
+}
+
+.containerproje .slide-container{
+    display: none;
+}
+
+.containerproje .slide-container.active{
+    display: block;
+}
+
+.containerproje .slide-container:nth-child(1) .slide{
+    background: url(./imagens/medium-shot-man-wearing-vr-glasses.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(2) .slide{
+    background: url(./imagens/woman-in-vr-glasses-float-in-neon-space-with-cables-attached-to-her-metaverse-avatar-concept.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje .slide-container:nth-child(3) .slide{
+    background: url(./imagens/closeup-of-woman-in-vr-glasses-float-in-neon-space-with-cables-attached-to-her-metaverse-avatar-concept.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerproje #prev, 
+.containerproje #next {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    background: #890873;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+.containerproje #prev:hover, 
+.containerproje #next:hover{
+    background: #ee7bd3;
+}
+.containerproje #prev{
+    left: 20px;
+}
+
+.containerproje #next{
+    right: 20px;
+}
+
+
+
+@media(max-width: 500px){
+    .containerproje #prev{
+        left: 0px;
+        top: 60%;
+    }
+
+    .containerproje #next{
+        right: 0px;
+        top: 60%;
+    }
+
+
+    .containerproje .slide-container .slide .contentproje p{
+        font-size: 16px;
+        color: #ffffff;
+        font-family: 'Noto Sans', sans-serif;
+        width: 70%;
+        height: 10%;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
